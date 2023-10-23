@@ -11,7 +11,9 @@ import SwiftUI
 struct ThreeSidedTechTestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+            }
         }
     }
 }
