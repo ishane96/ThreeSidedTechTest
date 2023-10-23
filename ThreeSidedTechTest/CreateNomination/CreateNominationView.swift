@@ -10,8 +10,6 @@ import SwiftUI
 struct CreateNominationView: View {
     
     @State private var selectedOption: String = "Select an Option"
-    @State var cubes = ["Any Body Part", "Arms", "Back", "Cardio", "Chest", "Core", "FullBody", "Legs", "Olympic", "Shoulders", "Other"]
-    @State var reasonTxt = ""
     @ObservedObject var viewModel = CreateNominationVM()
     @Environment(\.presentationMode) var presentation
 
@@ -97,7 +95,7 @@ struct CreateNominationView: View {
                             }
 
                             if let selectedRating = viewModel.ratings.first(where: { $0.isSelected == true }) {
-                                viewModel.process = selectedRating.text
+                                viewModel.process = selectedRating.textToApi
                             }
                         }
                     }

@@ -20,6 +20,8 @@
 		5C0163E42AE7074E000A7B4B /* Nomination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0163E32AE7074E000A7B4B /* Nomination.swift */; };
 		5C0163E72AE70C33000A7B4B /* KeyChainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0163E62AE70C33000A7B4B /* KeyChainWrapper.swift */; };
 		5C0163E92AE70E43000A7B4B /* NominationsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0163E82AE70E43000A7B4B /* NominationsVM.swift */; };
+		5C0163F32AE72F34000A7B4B /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0163F22AE72F34000A7B4B /* APITests.swift */; };
+		5C0163FA2AE72F4F000A7B4B /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0163F92AE72F4F000A7B4B /* URLProtocolMock.swift */; };
 		5CA509B52AE5CC4B00545D53 /* ThreeSidedTechTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA509B42AE5CC4B00545D53 /* ThreeSidedTechTestApp.swift */; };
 		5CA509B72AE5CC4B00545D53 /* NominationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA509B62AE5CC4B00545D53 /* NominationsView.swift */; };
 		5CA509B92AE5CC4C00545D53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CA509B82AE5CC4C00545D53 /* Assets.xcassets */; };
@@ -28,6 +30,16 @@
 		5CF633EB2AE5F83400D63889 /* BottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF633EA2AE5F83400D63889 /* BottomButton.swift */; };
 		5CF633ED2AE6023500D63889 /* CreateNominationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF633EC2AE6023500D63889 /* CreateNominationView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C0163F42AE72F34000A7B4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CA509A92AE5CC4B00545D53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CA509B02AE5CC4B00545D53;
+			remoteInfo = ThreeSidedTechTest;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5C0163CB2AE69E78000A7B4B /* RatingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingModel.swift; sourceTree = "<group>"; };
@@ -44,6 +56,9 @@
 		5C0163E32AE7074E000A7B4B /* Nomination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nomination.swift; sourceTree = "<group>"; };
 		5C0163E62AE70C33000A7B4B /* KeyChainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainWrapper.swift; sourceTree = "<group>"; };
 		5C0163E82AE70E43000A7B4B /* NominationsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NominationsVM.swift; sourceTree = "<group>"; };
+		5C0163F02AE72F33000A7B4B /* ThreeSidedTechTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreeSidedTechTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0163F22AE72F34000A7B4B /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
+		5C0163F92AE72F4F000A7B4B /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
 		5CA509B12AE5CC4B00545D53 /* ThreeSidedTechTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeSidedTechTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA509B42AE5CC4B00545D53 /* ThreeSidedTechTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSidedTechTestApp.swift; sourceTree = "<group>"; };
 		5CA509B62AE5CC4B00545D53 /* NominationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NominationsView.swift; sourceTree = "<group>"; };
@@ -55,6 +70,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5C0163ED2AE72F33000A7B4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CA509AE2AE5CC4B00545D53 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -110,10 +132,20 @@
 			path = KeyChainWrapper;
 			sourceTree = "<group>";
 		};
+		5C0163F12AE72F34000A7B4B /* ThreeSidedTechTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				5C0163F22AE72F34000A7B4B /* APITests.swift */,
+				5C0163F92AE72F4F000A7B4B /* URLProtocolMock.swift */,
+			);
+			path = ThreeSidedTechTestTests;
+			sourceTree = "<group>";
+		};
 		5CA509A82AE5CC4B00545D53 = {
 			isa = PBXGroup;
 			children = (
 				5CA509B32AE5CC4B00545D53 /* ThreeSidedTechTest */,
+				5C0163F12AE72F34000A7B4B /* ThreeSidedTechTestTests */,
 				5CA509B22AE5CC4B00545D53 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				5CA509B12AE5CC4B00545D53 /* ThreeSidedTechTest.app */,
+				5C0163F02AE72F33000A7B4B /* ThreeSidedTechTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +162,8 @@
 		5CA509B32AE5CC4B00545D53 /* ThreeSidedTechTest */ = {
 			isa = PBXGroup;
 			children = (
+				5CC0FB962AE7390100BA5691 /* CreateNomination */,
+				5CC0FB952AE738ED00BA5691 /* Nomination */,
 				5C0163E52AE70C19000A7B4B /* KeyChainWrapper */,
 				5C0163E02AE700AF000A7B4B /* Network */,
 				5C0163DB2AE6E59D000A7B4B /* CellViews */,
@@ -136,12 +171,8 @@
 				5C0163D32AE6DCFE000A7B4B /* Fonts */,
 				5CF633E92AE5F82100D63889 /* ReusableViews */,
 				5CA509B42AE5CC4B00545D53 /* ThreeSidedTechTestApp.swift */,
-				5CA509B62AE5CC4B00545D53 /* NominationsView.swift */,
-				5C0163E82AE70E43000A7B4B /* NominationsVM.swift */,
 				5CA509B82AE5CC4C00545D53 /* Assets.xcassets */,
 				5CA509BA2AE5CC4C00545D53 /* Preview Content */,
-				5CF633EC2AE6023500D63889 /* CreateNominationView.swift */,
-				5C0163CD2AE69FC4000A7B4B /* CreateNominationVM.swift */,
 				5C0163D92AE6DE51000A7B4B /* TextModifier.swift */,
 			);
 			path = ThreeSidedTechTest;
@@ -153,6 +184,24 @@
 				5CA509BB2AE5CC4C00545D53 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5CC0FB952AE738ED00BA5691 /* Nomination */ = {
+			isa = PBXGroup;
+			children = (
+				5CA509B62AE5CC4B00545D53 /* NominationsView.swift */,
+				5C0163E82AE70E43000A7B4B /* NominationsVM.swift */,
+			);
+			path = Nomination;
+			sourceTree = "<group>";
+		};
+		5CC0FB962AE7390100BA5691 /* CreateNomination */ = {
+			isa = PBXGroup;
+			children = (
+				5CF633EC2AE6023500D63889 /* CreateNominationView.swift */,
+				5C0163CD2AE69FC4000A7B4B /* CreateNominationVM.swift */,
+			);
+			path = CreateNomination;
 			sourceTree = "<group>";
 		};
 		5CF633E92AE5F82100D63889 /* ReusableViews */ = {
@@ -168,6 +217,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5C0163EF2AE72F33000A7B4B /* ThreeSidedTechTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C0163F62AE72F34000A7B4B /* Build configuration list for PBXNativeTarget "ThreeSidedTechTestTests" */;
+			buildPhases = (
+				5C0163EC2AE72F33000A7B4B /* Sources */,
+				5C0163ED2AE72F33000A7B4B /* Frameworks */,
+				5C0163EE2AE72F33000A7B4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C0163F52AE72F34000A7B4B /* PBXTargetDependency */,
+			);
+			name = ThreeSidedTechTestTests;
+			productName = ThreeSidedTechTestTests;
+			productReference = 5C0163F02AE72F33000A7B4B /* ThreeSidedTechTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5CA509B02AE5CC4B00545D53 /* ThreeSidedTechTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CA509BF2AE5CC4C00545D53 /* Build configuration list for PBXNativeTarget "ThreeSidedTechTest" */;
@@ -196,6 +263,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					5C0163EF2AE72F33000A7B4B = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 5CA509B02AE5CC4B00545D53;
+					};
 					5CA509B02AE5CC4B00545D53 = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -215,11 +286,19 @@
 			projectRoot = "";
 			targets = (
 				5CA509B02AE5CC4B00545D53 /* ThreeSidedTechTest */,
+				5C0163EF2AE72F33000A7B4B /* ThreeSidedTechTestTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5C0163EE2AE72F33000A7B4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CA509AF2AE5CC4B00545D53 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +335,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5C0163EC2AE72F33000A7B4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C0163F32AE72F34000A7B4B /* APITests.swift in Sources */,
+				5C0163FA2AE72F4F000A7B4B /* URLProtocolMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CA509AD2AE5CC4B00545D53 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,7 +367,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5C0163F52AE72F34000A7B4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CA509B02AE5CC4B00545D53 /* ThreeSidedTechTest */;
+			targetProxy = 5C0163F42AE72F34000A7B4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		5C0163F72AE72F34000A7B4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GPZK4U9M36;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ThreeSidedTechTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreeSidedTechTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ThreeSidedTechTest";
+			};
+			name = Debug;
+		};
+		5C0163F82AE72F34000A7B4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GPZK4U9M36;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ThreeSidedTechTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreeSidedTechTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ThreeSidedTechTest";
+			};
+			name = Release;
+		};
 		5CA509BD2AE5CC4C00545D53 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -465,6 +597,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5C0163F62AE72F34000A7B4B /* Build configuration list for PBXNativeTarget "ThreeSidedTechTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C0163F72AE72F34000A7B4B /* Debug */,
+				5C0163F82AE72F34000A7B4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5CA509AC2AE5CC4B00545D53 /* Build configuration list for PBXProject "ThreeSidedTechTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
