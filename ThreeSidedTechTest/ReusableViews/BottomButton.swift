@@ -10,25 +10,21 @@ import SwiftUI
 struct BottomButton: View {
     
     var title: String
+    var isPlain: Bool?
+    var btnAction: () -> Void
     
     var body: some View {
         VStack {
             Button(action: {
+                self.btnAction()
             }) {
                 Text(title)
             }
             .frame(height: 50)
             .frame(maxWidth: .infinity)
-            .background(Color.black)
+            .background(isPlain ?? false ? .white : .black)
             .padding(.all, 30)
-            .foregroundColor(.white)
+            .foregroundColor(isPlain ?? false ? .black : .white)
         }
-        .frame(maxWidth: .infinity)
-        .frame(height: 70)
-        .background(
-            Color.white
-                .shadow(color: Color.gray, radius: 10, x: 0, y: 0)
-                .mask(Rectangle().padding(.top, -20))
-        )
     }
 }

@@ -7,15 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0163CC2AE69E79000A7B4B /* RatingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0163CB2AE69E78000A7B4B /* RatingModel.swift */; };
+		5C0163CE2AE69FC4000A7B4B /* CreateNominationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0163CD2AE69FC4000A7B4B /* CreateNominationVM.swift */; };
+		5C0163D02AE6C2A0000A7B4B /* CustomDropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0163CF2AE6C2A0000A7B4B /* CustomDropDownView.swift */; };
+		5C0163D22AE6DCFB000A7B4B /* AnonymousPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C0163D12AE6DCFA000A7B4B /* AnonymousPro-Regular.ttf */; };
+		5C0163D52AE6DD4C000A7B4B /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C0163D42AE6DD4B000A7B4B /* Poppins-Regular.ttf */; };
+		5C0163D82AE6DE1D000A7B4B /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C0163D72AE6DE1D000A7B4B /* Poppins-Bold.ttf */; };
+		5C0163DA2AE6DE51000A7B4B /* TextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0163D92AE6DE51000A7B4B /* TextModifier.swift */; };
+		5C0163DD2AE6E5AA000A7B4B /* RatingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0163DC2AE6E5AA000A7B4B /* RatingCellView.swift */; };
 		5CA509B52AE5CC4B00545D53 /* ThreeSidedTechTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA509B42AE5CC4B00545D53 /* ThreeSidedTechTestApp.swift */; };
 		5CA509B72AE5CC4B00545D53 /* NominationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA509B62AE5CC4B00545D53 /* NominationsView.swift */; };
 		5CA509B92AE5CC4C00545D53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CA509B82AE5CC4C00545D53 /* Assets.xcassets */; };
 		5CA509BC2AE5CC4C00545D53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CA509BB2AE5CC4C00545D53 /* Preview Assets.xcassets */; };
 		5CDC22B82AE5D0D7007FF668 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDC22B72AE5D0D7007FF668 /* NavigationBar.swift */; };
 		5CF633EB2AE5F83400D63889 /* BottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF633EA2AE5F83400D63889 /* BottomButton.swift */; };
+		5CF633ED2AE6023500D63889 /* CreateNominationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF633EC2AE6023500D63889 /* CreateNominationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C0163CB2AE69E78000A7B4B /* RatingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingModel.swift; sourceTree = "<group>"; };
+		5C0163CD2AE69FC4000A7B4B /* CreateNominationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNominationVM.swift; sourceTree = "<group>"; };
+		5C0163CF2AE6C2A0000A7B4B /* CustomDropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDropDownView.swift; sourceTree = "<group>"; };
+		5C0163D12AE6DCFA000A7B4B /* AnonymousPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AnonymousPro-Regular.ttf"; sourceTree = "<group>"; };
+		5C0163D42AE6DD4B000A7B4B /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		5C0163D62AE6DD62000A7B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5C0163D72AE6DE1D000A7B4B /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		5C0163D92AE6DE51000A7B4B /* TextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifier.swift; sourceTree = "<group>"; };
+		5C0163DC2AE6E5AA000A7B4B /* RatingCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingCellView.swift; sourceTree = "<group>"; };
 		5CA509B12AE5CC4B00545D53 /* ThreeSidedTechTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeSidedTechTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CA509B42AE5CC4B00545D53 /* ThreeSidedTechTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSidedTechTestApp.swift; sourceTree = "<group>"; };
 		5CA509B62AE5CC4B00545D53 /* NominationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NominationsView.swift; sourceTree = "<group>"; };
@@ -23,6 +41,7 @@
 		5CA509BB2AE5CC4C00545D53 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5CDC22B72AE5D0D7007FF668 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		5CF633EA2AE5F83400D63889 /* BottomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButton.swift; sourceTree = "<group>"; };
+		5CF633EC2AE6023500D63889 /* CreateNominationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNominationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +55,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C0163CA2AE69E64000A7B4B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C0163CB2AE69E78000A7B4B /* RatingModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5C0163D32AE6DCFE000A7B4B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5C0163D72AE6DE1D000A7B4B /* Poppins-Bold.ttf */,
+				5C0163D42AE6DD4B000A7B4B /* Poppins-Regular.ttf */,
+				5C0163D12AE6DCFA000A7B4B /* AnonymousPro-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5C0163DB2AE6E59D000A7B4B /* CellViews */ = {
+			isa = PBXGroup;
+			children = (
+				5C0163DC2AE6E5AA000A7B4B /* RatingCellView.swift */,
+			);
+			path = CellViews;
+			sourceTree = "<group>";
+		};
 		5CA509A82AE5CC4B00545D53 = {
 			isa = PBXGroup;
 			children = (
@@ -55,11 +100,18 @@
 		5CA509B32AE5CC4B00545D53 /* ThreeSidedTechTest */ = {
 			isa = PBXGroup;
 			children = (
+				5C0163DB2AE6E59D000A7B4B /* CellViews */,
+				5C0163D62AE6DD62000A7B4B /* Info.plist */,
+				5C0163D32AE6DCFE000A7B4B /* Fonts */,
+				5C0163CA2AE69E64000A7B4B /* Models */,
 				5CF633E92AE5F82100D63889 /* ReusableViews */,
 				5CA509B42AE5CC4B00545D53 /* ThreeSidedTechTestApp.swift */,
 				5CA509B62AE5CC4B00545D53 /* NominationsView.swift */,
 				5CA509B82AE5CC4C00545D53 /* Assets.xcassets */,
 				5CA509BA2AE5CC4C00545D53 /* Preview Content */,
+				5CF633EC2AE6023500D63889 /* CreateNominationView.swift */,
+				5C0163CD2AE69FC4000A7B4B /* CreateNominationVM.swift */,
+				5C0163D92AE6DE51000A7B4B /* TextModifier.swift */,
 			);
 			path = ThreeSidedTechTest;
 			sourceTree = "<group>";
@@ -77,6 +129,7 @@
 			children = (
 				5CDC22B72AE5D0D7007FF668 /* NavigationBar.swift */,
 				5CF633EA2AE5F83400D63889 /* BottomButton.swift */,
+				5C0163CF2AE6C2A0000A7B4B /* CustomDropDownView.swift */,
 			);
 			path = ReusableViews;
 			sourceTree = "<group>";
@@ -142,6 +195,9 @@
 			files = (
 				5CA509BC2AE5CC4C00545D53 /* Preview Assets.xcassets in Resources */,
 				5CA509B92AE5CC4C00545D53 /* Assets.xcassets in Resources */,
+				5C0163D82AE6DE1D000A7B4B /* Poppins-Bold.ttf in Resources */,
+				5C0163D22AE6DCFB000A7B4B /* AnonymousPro-Regular.ttf in Resources */,
+				5C0163D52AE6DD4C000A7B4B /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,9 +228,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C0163CC2AE69E79000A7B4B /* RatingModel.swift in Sources */,
+				5C0163CE2AE69FC4000A7B4B /* CreateNominationVM.swift in Sources */,
+				5CF633ED2AE6023500D63889 /* CreateNominationView.swift in Sources */,
 				5CA509B72AE5CC4B00545D53 /* NominationsView.swift in Sources */,
 				5CA509B52AE5CC4B00545D53 /* ThreeSidedTechTestApp.swift in Sources */,
+				5C0163DD2AE6E5AA000A7B4B /* RatingCellView.swift in Sources */,
+				5C0163DA2AE6DE51000A7B4B /* TextModifier.swift in Sources */,
 				5CF633EB2AE5F83400D63889 /* BottomButton.swift in Sources */,
+				5C0163D02AE6C2A0000A7B4B /* CustomDropDownView.swift in Sources */,
 				5CDC22B82AE5D0D7007FF668 /* NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,11 +369,12 @@
 				DEVELOPMENT_TEAM = GPZK4U9M36;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ThreeSidedTechTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -340,11 +403,12 @@
 				DEVELOPMENT_TEAM = GPZK4U9M36;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ThreeSidedTechTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

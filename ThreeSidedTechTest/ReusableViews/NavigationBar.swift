@@ -19,6 +19,7 @@ extension View {
             .navigationBarItems(leading:
                                     HStack {
                 Button(action: {
+                    backButtonAction()
                 }) {
                     Image(systemName: "arrow.left")
                         .resizable()

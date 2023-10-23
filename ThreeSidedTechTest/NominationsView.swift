@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct NominationsView: View {
     init() {
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = .black // Set the desired background color
@@ -16,23 +16,34 @@ struct ContentView: View {
         appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         appearance.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
+    @State var nominationBtnPressed = false
     
     var body: some View {
-        VStack {
+        NavigationView {
             VStack {
-                
-                List {
-                    ForEach(0..<10, id: \.self) { index in
-                        NominationCellView()
+                VStack {
+                    List {
+                        ForEach(0..<10, id: \.self) { index in
+                            NominationCellView()
+                        }
                     }
+                    .padding()
+                    .listStyle(PlainListStyle())
+                    //                EmptyNominationView()
                 }
-                .padding()
-                .listStyle(PlainListStyle())
-                //                EmptyNominationView()
+                NavigationLink(destination: CreateNominationView(), isActive: $nominationBtnPressed) {
+                    BottomButton(title: "Create New Notification", isPlain: false, btnAction: {self.nominationBtnPressed = true})
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 70)
+                        .background(
+                            Color.white
+                                .shadow(color: Color.gray, radius: 10, x: 0, y: 0)
+                                .mask(Rectangle().padding(.top, -20))
+                        )
+                }
             }
-            BottomButton(title: "Create New Notification")
+            .customNavigationBar(isBackButton: false, title: "Title", isTitle: false, backButtonAction: {})
         }
-        .customNavigationBar(isBackButton: false, title: "Title", isTitle: false, backButtonAction: {})
     }
 }
 
@@ -58,8 +69,8 @@ struct EmptyNominationView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct NominationsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NominationsView()
     }
 }
