@@ -11,7 +11,7 @@ import SwiftUI
 struct ThreeSidedTechTestApp: App {
     var body: some Scene {
         WindowGroup {
-                NominationsView()
+            NominationsView()
         }
     }
 }

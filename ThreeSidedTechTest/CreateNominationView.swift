@@ -41,7 +41,7 @@ struct CreateNominationView: View {
                                 .modifier(TextModifier.PoppinsBold16x())
                         }
 
-                        CustomDropdownView(selectedOption: $selectedOption, options: cubes)
+                        CustomDropdownView(selectedOption: $selectedOption, options: viewModel.nominees, nomineeId: $viewModel.nomineeId)
                             .modifier(TextModifier.AnonymousPro16x())
                             .padding(.bottom, 40)
                     }
@@ -62,7 +62,7 @@ struct CreateNominationView: View {
                             .modifier(TextModifier.PoppinsBold16x())
                     }
 
-                    TextEditor(text: $reasonTxt)
+                    TextEditor(text: $viewModel.reason)
                         .frame(height: 150)
                         .modifier(TextModifier.AnonymousPro16x())
                         .overlay(RoundedRectangle(cornerRadius: 2.0).stroke(Color.gray, lineWidth: 1.0))
@@ -95,10 +95,17 @@ struct CreateNominationView: View {
                             viewModel.ratings.indices.forEach { ind in
                                 viewModel.ratings[ind].isSelected = (ind == rating)
                             }
+
+                            if let selectedRating = viewModel.ratings.first(where: { $0.isSelected == true }) {
+                                viewModel.process = selectedRating.text
+                            }
                         }
                     }
                 }
                 .padding()
+                .onAppear {
+                    viewModel.getNominees()
+                }
             }
             //                    NavigationLink(destination: CreateNominationView(), isActive: $nominationBtnPressed) {
 
@@ -114,7 +121,10 @@ struct CreateNominationView: View {
                 .overlay(RoundedRectangle(cornerRadius: 2.0).stroke(Color.black, lineWidth: 1.0))
                 .padding(.leading, 40)
 
-                Button(action: {}, label: {
+                Button(action: {
+                    selectedOption = viewModel.selectedNominee
+                    viewModel.createNomination()
+                }, label: {
                     Text("SUBMIT NOMINATION")
                 })
                 .minimumScaleFactor(0.5)

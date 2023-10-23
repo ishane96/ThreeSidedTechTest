@@ -10,8 +10,9 @@ import SwiftUI
 struct CustomDropdownView: View {
     @State var isDropdownVisible = false
     @Binding var selectedOption: String
-    let options: [String]
-    
+    let options: [Nominee]
+    @Binding var nomineeId: String
+
     var body: some View {
         VStack(alignment: .leading) {
             Button(action: {
@@ -34,14 +35,18 @@ struct CustomDropdownView: View {
             if isDropdownVisible {
                 ScrollView {
                     LazyVStack(alignment: .leading) {
-                        ForEach(options, id: \.self) { option in
+                        ForEach(options, id: \.nomineeID) { option in
                             Button(action: {
-                                self.selectedOption = option
+                                self.selectedOption = option.firstName ?? ""
+                                self.nomineeId = option.nomineeID ?? ""
+//                                if let selectedID = options.first(where: { $0.nomineeID == option.nomineeID }) {
+//                                    nomineeId = selectedID.nomineeID ?? ""
+//                                }
                                 withAnimation {
                                     self.isDropdownVisible.toggle()
                                 }
                             }) {
-                                Text(option)
+                                Text(option.firstName ?? "")
                                     .padding(10)
                             }
                         }

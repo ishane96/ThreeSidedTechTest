@@ -16,6 +16,13 @@ class TextModifier {
         }
     }
 
+    struct PoppinsBold24x: ViewModifier {
+        func body(content: Content) -> some View {
+            return content
+                .font(Font.custom("Poppins-Bold", size: 24))
+        }
+    }
+
     struct PoppinsBold16x: ViewModifier {
         func body(content: Content) -> some View {
             return content
@@ -27,6 +34,14 @@ class TextModifier {
         func body(content: Content) -> some View {
             return content
                 .font(Font.custom("Anonymous Pro", size: 16))
+                .foregroundColor(Color(red: 0.27, green: 0.27, blue: 0.27))
+        }
+    }
+
+    struct AnonymousProBold16x: ViewModifier {
+        func body(content: Content) -> some View {
+            return content
+                .font(Font.custom("AnonymousPro-Bold", size: 16))
                 .foregroundColor(Color(red: 0.27, green: 0.27, blue: 0.27))
         }
     }
