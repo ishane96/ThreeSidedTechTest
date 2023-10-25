@@ -26,6 +26,7 @@ struct CreateNominationBottomView: View {
             .padding(.horizontal, 30)
             .padding(.vertical)
             .foregroundColor(.black)
+            .modifier(TextModifier.PoppinsBold14x())
             .overlay(RoundedRectangle(cornerRadius: 2.0).stroke(Color.black, lineWidth: 1.0))
             .padding(.leading, 40)
             .sheet(isPresented: $isPresenting) {
@@ -41,6 +42,7 @@ struct CreateNominationBottomView: View {
             .padding()
             .frame(maxWidth: .infinity)
             .background(formValidation ? .black : .gray)
+            .modifier(TextModifier.PoppinsBold14x())
             .foregroundColor(.white)
             .padding(.horizontal, 20)
             .disabled(!formValidation)

@@ -23,7 +23,7 @@ struct BottomButton: View {
             .frame(height: 50)
             .frame(maxWidth: .infinity)
             .background(isPlain ?? false ? .white : .black)
-            .modifier(TextModifier.PoppinsBold16x())
+            .modifier(TextModifier.PoppinsBold14x())
             .foregroundColor(isPlain ?? false ? .black : .white)
             .overlay(RoundedRectangle(cornerRadius: 2.0).stroke(Color.black, lineWidth: 1.5))
         }

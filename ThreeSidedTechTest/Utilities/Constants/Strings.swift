@@ -16,7 +16,7 @@ extension String {
 
     static let nominateTitle = NSLocalizedString("I'D LIKE TO NOMINATE...", comment: "")
     static let nominateDescription = NSLocalizedString("""
-        "Please select a cube who you feel has done something honourable this month or
+        Please select a cube who you feel has done something honourable this month or
         just all round has a great work ethic.
         """, comment: "")
     static let cubeNameTitle = NSLocalizedString("Cube's Name", comment: "")

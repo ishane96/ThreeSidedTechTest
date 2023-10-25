@@ -12,7 +12,7 @@ struct TitleAndDescriptionView: View {
     var descrptn: String
 
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 10) {
             Text(title)
             .modifier(TextModifier.PoppinsBold18x())
             Text(descrptn)

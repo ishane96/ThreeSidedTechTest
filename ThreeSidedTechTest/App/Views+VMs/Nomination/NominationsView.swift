@@ -14,50 +14,56 @@ struct NominationsView: View {
     @State var isStateChanged = false
     @State var isCreateNewNomination = false
     let apiSemaphore = DispatchSemaphore(value: 0)
+    @State var isLoading = true
 
     var body: some View {
         NavigationView {
             VStack {
-                VStack {
-                    ImageHeaderView(title: String.yourNominationsTitle, image: "greenBlobs")
+                if isLoading {
+                    ProgressView()
+                } else {
+                    VStack {
+                        ImageHeaderView(title: String.yourNominationsTitle, image: "greenBlobs")
 
-                    if viewModel.nomination.count > 0 {
-                        List {
-                            ForEach(viewModel.nomination, id: \.self) { nomination in
-                                NominationCellView(name: viewModel.getName(id: nomination.nomineeID),
-                                                   reason: nomination.reason)
+                        if viewModel.nomination.count > 0 {
+                            List {
+                                ForEach(viewModel.nomination, id: \.self) { nomination in
+                                    NominationCellView(name: viewModel.getName(id: nomination.nomineeID),
+                                                       reason: nomination.reason)
+                                }
                             }
+                            .listStyle(PlainListStyle())
+                        } else {
+                            EmptyNominationView()
                         }
-                        .listStyle(PlainListStyle())
-                    } else {
-                        EmptyNominationView()
-                    }
-                }
-                .alert(viewModel.errorMsg, isPresented: $viewModel.isErrored) {
-                    Button("OK", role: .cancel) { }
-                }
-                .onAppear {
-                    getData()
-                }
 
-                NavigationLink(destination: CreateNominationView(isStateChanged: $isStateChanged,
-                                                                 nominees: $viewModel.nominees),
-                               isActive: $nominationBtnPressed) {
-                    BottomButton(title: String.createNewNominationTitle, isPlain: false, btnAction: {
-                        createNominationBtnAction()
-                    })
-                    .padding(.all, 30)
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 70)
-                    .background(
-                        Color.white
-                            .shadow(color: Color.gray, radius: 10, x: 0, y: 0)
-                            .mask(Rectangle().padding(.top, -20))
-                    )
+                    }
+                    .alert(viewModel.errorMsg, isPresented: $viewModel.isErrored) {
+                        Button("OK", role: .cancel) { }
+                    }
+
+                    NavigationLink(destination: CreateNominationView(isStateChanged: $isStateChanged,
+                                                                     nominees: $viewModel.nominees),
+                                   isActive: $nominationBtnPressed) {
+                        BottomButton(title: String.createNewNominationTitle, isPlain: false, btnAction: {
+                            createNominationBtnAction()
+                        })
+                        .padding(.all, 30)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 70)
+                        .background(
+                            Color.white
+                                .shadow(color: Color.gray, radius: 10, x: 0, y: 0)
+                                .mask(Rectangle().padding(.top, -20))
+                        )
+                    }
+                    NavigationLink(destination: CreateNominationView(isStateChanged: $isStateChanged,
+                                                                     nominees: $viewModel.nominees),
+                                   isActive: $isCreateNewNomination) {}
                 }
-                NavigationLink(destination: CreateNominationView(isStateChanged: $isStateChanged,
-                                                                 nominees: $viewModel.nominees),
-                               isActive: $isCreateNewNomination) {}
+            }
+            .onAppear {
+                getData()
             }
             .customNavigationBar(isBackButton: false, title: "", isTitle: false, backButtonAction: {})
         }
@@ -81,6 +87,7 @@ struct NominationsView: View {
         DispatchQueue.global(qos: .background).async {
             self.viewModel.getNominees { success in
                 // Signal the semaphore to allow the nominations API call
+                isLoading = false
                 if success {
                     apiSemaphore.signal()
                 }

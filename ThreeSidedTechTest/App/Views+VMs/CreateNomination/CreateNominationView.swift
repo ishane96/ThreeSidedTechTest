@@ -19,10 +19,7 @@ struct CreateNominationView: View {
     var body: some View {
         VStack(alignment: .leading) {
             ScrollView(showsIndicators: false) {
-                Image("sampleImg")
-                    .resizable()
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 200)
+                TopImageView(img: "sampleImg")
 
                 VStack(alignment: .leading, spacing: 10) {
                     TitleAndDescriptionView(title: String.nominateTitle,
@@ -46,13 +43,15 @@ struct CreateNominationView: View {
                             .padding(.bottom, 30)
                     }
 
-                    ForEach(0..<viewModel.ratings.count, id: \.self) { rating in
-                        RatingCellView(imgIcon:
-                                        viewModel.ratings[rating].imgIcon,
-                                       text: viewModel.ratings[rating].text,
-                                       isSelected: viewModel.process == viewModel.ratings[rating].textToApi)
-                        .onTapGesture {
-                            viewModel.process = viewModel.ratings[rating].textToApi
+                    LazyVStack {
+                        ForEach(0..<viewModel.ratings.count, id: \.self) { rating in
+                            RatingCellView(imgIcon:
+                                            viewModel.ratings[rating].imgIcon,
+                                           text: viewModel.ratings[rating].text,
+                                           isSelected: viewModel.process == viewModel.ratings[rating].textToApi)
+                            .onTapGesture {
+                                viewModel.process = viewModel.ratings[rating].textToApi
+                            }
                         }
                     }
                 }

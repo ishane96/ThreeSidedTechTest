@@ -37,6 +37,13 @@ class TextModifier {
         }
     }
 
+    struct PoppinsBold14x: ViewModifier {
+        func body(content: Content) -> some View {
+            return content
+                .font(Font.custom("Poppins-Bold", size: 14))
+        }
+    }
+
     struct AnonymousPro16x: ViewModifier {
         func body(content: Content) -> some View {
             return content

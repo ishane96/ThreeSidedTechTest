@@ -17,13 +17,13 @@ struct NominationSubmittedView: View {
     var body: some View {
         NavigationView {
             VStack(alignment: .center, spacing: 20) {
-                Image("successImg")
-                    .resizable()
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 200)
+
+                ScrollView {
+                TopImageView(img: "successImg")
 
                 VStack(alignment: .center, spacing: 25) {
                     Text("NOMINATION SUBMITTED")
+                        .lineLimit(4)
                         .multilineTextAlignment(.center)
                         .modifier(TextModifier.PoppinsBold32x())
 
@@ -32,7 +32,7 @@ struct NominationSubmittedView: View {
                         .modifier(TextModifier.AnonymousPro16x())
                 }
                 .padding(.all, 40)
-
+            }
                 Spacer()
 
                 VStack(spacing: 15) {
