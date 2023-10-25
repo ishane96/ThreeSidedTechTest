@@ -16,7 +16,7 @@ class NominationsAPI {
         self.urlSession = urlSession
     }
 
-    // MARK: - Fetch Search result requst
+    // MARK: - Fetch results request
     // Used generics to make it as reusable
     func getAllData<T: Decodable>(url: String, _ mapType: T.Type, completion: @escaping (_ response: T?,
                                                                                          _ code: Int?,
@@ -55,6 +55,7 @@ class NominationsAPI {
         task.resume()
     }
 
+    // MARK: - Create new nomination request
     func createNominationAPI(nomineeId: String, reason: String, process: String, completion: @escaping (
         _ code: Int?,
         _ error: Error?) -> Void) {
