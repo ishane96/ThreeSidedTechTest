@@ -16,7 +16,7 @@ struct CreateNominationResponse: Codable {
 }
 
 // MARK: - Datum
-struct Nomination: Codable {
+struct Nomination: Codable, Hashable {
     let nominationID, nomineeID, reason, process: String
     let dateSubmitted, closingDate: String
 
@@ -26,6 +26,14 @@ struct Nomination: Codable {
         case reason, process
         case dateSubmitted = "date_submitted"
         case closingDate = "closing_date"
+    }
+
+    static func == (lhs: Nomination, rhs: Nomination) -> Bool {
+        return lhs.nominationID == rhs.nominationID
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(nominationID)
     }
 }
 

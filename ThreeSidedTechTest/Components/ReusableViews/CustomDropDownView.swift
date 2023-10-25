@@ -15,11 +15,11 @@ struct CustomDropdownView: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            Button(action: {
+            Button {
                 withAnimation {
                     self.isDropdownVisible.toggle()
                 }
-            }) {
+            }label: {
                 HStack {
                     Text(selectedOption)
                     Spacer()
@@ -31,22 +31,20 @@ struct CustomDropdownView: View {
             .padding()
             .foregroundColor(.black)
             .overlay(RoundedRectangle(cornerRadius: 2.0).stroke(Color.gray, lineWidth: 1.0))
-            
+
             if isDropdownVisible {
                 ScrollView {
-                    LazyVStack(alignment: .leading) {
+                    VStack(alignment: .leading) {
                         ForEach(options, id: \.nomineeID) { option in
-                            Button(action: {
-                                self.selectedOption = option.firstName ?? ""
+                            Button {
+                                self.selectedOption = "\(option.firstName ?? "") \( option.lastName ?? "")"
                                 self.nomineeId = option.nomineeID ?? ""
-//                                if let selectedID = options.first(where: { $0.nomineeID == option.nomineeID }) {
-//                                    nomineeId = selectedID.nomineeID ?? ""
-//                                }
                                 withAnimation {
                                     self.isDropdownVisible.toggle()
                                 }
-                            }) {
-                                Text(option.firstName ?? "")
+                            } label: {
+                                Text("\(option.firstName ?? "") \( option.lastName ?? "")")
+                                    .frame(maxWidth: .infinity, alignment: .leading)
                                     .padding(10)
                             }
                         }

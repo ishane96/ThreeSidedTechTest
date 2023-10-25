@@ -18,9 +18,9 @@ extension View {
             .navigationBarBackButtonHidden(true)
             .navigationBarItems(leading:
                                     HStack {
-                Button(action: {
+                Button {
                     backButtonAction()
-                }) {
+                }label: {
                     Image(systemName: "arrow.left")
                         .resizable()
                         .tint(.white)

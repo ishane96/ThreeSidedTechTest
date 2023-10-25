@@ -8,23 +8,24 @@
 import SwiftUI
 
 struct BottomButton: View {
-    
+
     var title: String
     var isPlain: Bool?
     var btnAction: () -> Void
-    
+
     var body: some View {
         VStack {
-            Button(action: {
+            Button {
                 self.btnAction()
-            }) {
+            } label: {
                 Text(title)
             }
             .frame(height: 50)
             .frame(maxWidth: .infinity)
             .background(isPlain ?? false ? .white : .black)
-            .padding(.all, 30)
+            .modifier(TextModifier.PoppinsBold16x())
             .foregroundColor(isPlain ?? false ? .black : .white)
+            .overlay(RoundedRectangle(cornerRadius: 2.0).stroke(Color.black, lineWidth: 1.5))
         }
     }
 }

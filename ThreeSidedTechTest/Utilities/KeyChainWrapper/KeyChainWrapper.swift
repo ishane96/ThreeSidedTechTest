@@ -8,7 +8,6 @@
 import Security
 import SwiftUI
 
-
 class KeychainWrapper {
 
     static let shared = KeychainWrapper()
@@ -71,7 +70,6 @@ class KeychainWrapper {
             print("Token updated in Keychain")
         }
     }
-
 
     func readAuthTokenFromKeychain() -> String? {
         let keychainItemIdentifier = "com.test.ThreeSidedTechTest" // Same identifier used for saving

@@ -21,7 +21,7 @@ struct RatingCellView: View {
             Text(text)
                 .modifier(TextModifier.PoppinsBold16x())
             Spacer()
-            Image(isSelected ?? false  ? "Active" : "Inactive")
+            Image(isSelected ? "Active" : "Inactive")
                 .resizable()
                 .frame(width: 25, height: 25)
         }
