@@ -27,6 +27,10 @@
 		5CA509B72AE5CC4B00545D53 /* NominationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA509B62AE5CC4B00545D53 /* NominationsView.swift */; };
 		5CA509B92AE5CC4C00545D53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CA509B82AE5CC4C00545D53 /* Assets.xcassets */; };
 		5CA509BC2AE5CC4C00545D53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CA509BB2AE5CC4C00545D53 /* Preview Assets.xcassets */; };
+		5CC24B482AE9DBB80005EE13 /* Nominee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC24B472AE9DBB80005EE13 /* Nominee.swift */; };
+		5CC24B4A2AE9DBE50005EE13 /* NominationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC24B492AE9DBE50005EE13 /* NominationResponse.swift */; };
+		5CC24B4C2AE9DBFC0005EE13 /* CreateNominationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC24B4B2AE9DBFC0005EE13 /* CreateNominationResponse.swift */; };
+		5CC24B4E2AE9DC190005EE13 /* NomineeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC24B4D2AE9DC190005EE13 /* NomineeResponse.swift */; };
 		5CD985882AE98764009F2D65 /* NominationCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD985872AE98764009F2D65 /* NominationCellView.swift */; };
 		5CD9858A2AE9878A009F2D65 /* EmptyNominationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD985892AE9878A009F2D65 /* EmptyNominationView.swift */; };
 		5CD9858C2AE994D3009F2D65 /* TitleTextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD9858B2AE994D3009F2D65 /* TitleTextEditorView.swift */; };
@@ -76,6 +80,10 @@
 		5CA509B62AE5CC4B00545D53 /* NominationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NominationsView.swift; sourceTree = "<group>"; };
 		5CA509B82AE5CC4C00545D53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CA509BB2AE5CC4C00545D53 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5CC24B472AE9DBB80005EE13 /* Nominee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nominee.swift; sourceTree = "<group>"; };
+		5CC24B492AE9DBE50005EE13 /* NominationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NominationResponse.swift; sourceTree = "<group>"; };
+		5CC24B4B2AE9DBFC0005EE13 /* CreateNominationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNominationResponse.swift; sourceTree = "<group>"; };
+		5CC24B4D2AE9DC190005EE13 /* NomineeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomineeResponse.swift; sourceTree = "<group>"; };
 		5CD985872AE98764009F2D65 /* NominationCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NominationCellView.swift; sourceTree = "<group>"; };
 		5CD985892AE9878A009F2D65 /* EmptyNominationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyNominationView.swift; sourceTree = "<group>"; };
 		5CD9858B2AE994D3009F2D65 /* TitleTextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextEditorView.swift; sourceTree = "<group>"; };
@@ -114,6 +122,10 @@
 			children = (
 				5C0163CB2AE69E78000A7B4B /* RatingModel.swift */,
 				5C0163E32AE7074E000A7B4B /* Nomination.swift */,
+				5CC24B472AE9DBB80005EE13 /* Nominee.swift */,
+				5CC24B492AE9DBE50005EE13 /* NominationResponse.swift */,
+				5CC24B4B2AE9DBFC0005EE13 /* CreateNominationResponse.swift */,
+				5CC24B4D2AE9DC190005EE13 /* NomineeResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -454,13 +466,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C0163CC2AE69E79000A7B4B /* RatingModel.swift in Sources */,
+				5CC24B482AE9DBB80005EE13 /* Nominee.swift in Sources */,
 				5C0163CE2AE69FC4000A7B4B /* CreateNominationVM.swift in Sources */,
 				5C0163E72AE70C33000A7B4B /* KeyChainWrapper.swift in Sources */,
+				5CC24B4C2AE9DBFC0005EE13 /* CreateNominationResponse.swift in Sources */,
 				5CD9858E2AE994F3009F2D65 /* TitleDropDownView.swift in Sources */,
 				5CF633ED2AE6023500D63889 /* CreateNominationView.swift in Sources */,
 				5C0163E92AE70E43000A7B4B /* NominationsVM.swift in Sources */,
 				5CA509B72AE5CC4B00545D53 /* NominationsView.swift in Sources */,
 				5CD985882AE98764009F2D65 /* NominationCellView.swift in Sources */,
+				5CC24B4E2AE9DC190005EE13 /* NomineeResponse.swift in Sources */,
 				5CD985972AE9AB48009F2D65 /* NominationSubmittedView.swift in Sources */,
 				5CA509B52AE5CC4B00545D53 /* ThreeSidedTechTestApp.swift in Sources */,
 				5C0163E42AE7074E000A7B4B /* Nomination.swift in Sources */,
@@ -469,6 +484,7 @@
 				5C0163DD2AE6E5AA000A7B4B /* RatingCellView.swift in Sources */,
 				5C0163E22AE700D3000A7B4B /* NominationsAPI.swift in Sources */,
 				5CD985922AE9959B009F2D65 /* BottomSheetView.swift in Sources */,
+				5CC24B4A2AE9DBE50005EE13 /* NominationResponse.swift in Sources */,
 				5CD985942AE9A1A4009F2D65 /* ImageHeaderView.swift in Sources */,
 				5C0163DA2AE6DE51000A7B4B /* TextModifier.swift in Sources */,
 				5CF633EB2AE5F83400D63889 /* BottomButton.swift in Sources */,
