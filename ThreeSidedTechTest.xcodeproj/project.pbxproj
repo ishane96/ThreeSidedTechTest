@@ -139,8 +139,8 @@
 		5C0163E02AE700AF000A7B4B /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				5CD9859A2AE9CAD4009F2D65 /* APIs */,
 				5C0163CA2AE69E64000A7B4B /* Models */,
-				5C0163E12AE700D3000A7B4B /* NominationsAPI.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -292,6 +292,14 @@
 				5CD985962AE9AB48009F2D65 /* NominationSubmittedView.swift */,
 			);
 			path = NominationSubmitted;
+			sourceTree = "<group>";
+		};
+		5CD9859A2AE9CAD4009F2D65 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				5C0163E12AE700D3000A7B4B /* NominationsAPI.swift */,
+			);
+			path = APIs;
 			sourceTree = "<group>";
 		};
 		5CF633E92AE5F82100D63889 /* ReusableViews */ = {
