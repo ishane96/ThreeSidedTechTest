@@ -282,9 +282,9 @@
 		5CC0FB952AE738ED00BA5691 /* Nomination */ = {
 			isa = PBXGroup;
 			children = (
+				5CDDBBC72AEA39BE008AED10 /* SubCompoents */,
 				5CA509B62AE5CC4B00545D53 /* NominationsView.swift */,
 				5C0163E82AE70E43000A7B4B /* NominationsVM.swift */,
-				5CD985892AE9878A009F2D65 /* EmptyNominationView.swift */,
 			);
 			path = Nomination;
 			sourceTree = "<group>";
@@ -292,10 +292,9 @@
 		5CC0FB962AE7390100BA5691 /* CreateNomination */ = {
 			isa = PBXGroup;
 			children = (
+				5CDDBBC82AEA39D8008AED10 /* SubComponents */,
 				5CF633EC2AE6023500D63889 /* CreateNominationView.swift */,
 				5C0163CD2AE69FC4000A7B4B /* CreateNominationVM.swift */,
-				5CD985912AE9959B009F2D65 /* BottomSheetView.swift */,
-				5CD985982AE9C904009F2D65 /* CreateNominationBottomView.swift */,
 			);
 			path = CreateNomination;
 			sourceTree = "<group>";
@@ -314,6 +313,23 @@
 				5C0163E12AE700D3000A7B4B /* NominationsAPI.swift */,
 			);
 			path = APIs;
+			sourceTree = "<group>";
+		};
+		5CDDBBC72AEA39BE008AED10 /* SubCompoents */ = {
+			isa = PBXGroup;
+			children = (
+				5CD985892AE9878A009F2D65 /* EmptyNominationView.swift */,
+			);
+			path = SubCompoents;
+			sourceTree = "<group>";
+		};
+		5CDDBBC82AEA39D8008AED10 /* SubComponents */ = {
+			isa = PBXGroup;
+			children = (
+				5CD985912AE9959B009F2D65 /* BottomSheetView.swift */,
+				5CD985982AE9C904009F2D65 /* CreateNominationBottomView.swift */,
+			);
+			path = SubComponents;
 			sourceTree = "<group>";
 		};
 		5CF633E92AE5F82100D63889 /* ReusableViews */ = {
